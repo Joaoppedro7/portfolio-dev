@@ -1,0 +1,93 @@
+.intro {
+  background: url("../assets/background/Background_Intro.png") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 180px 80px;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  padding-top: 56px;
+  font: var(--subtitle);
+  color: var(--gray-500);
+
+  span {
+    color: var(--red);
+  }
+}
+
+h1 {
+  margin-top: 8px;
+  font: var(--title-lg);
+  color: var(--gray-600);
+}
+
+h1 + p {
+  margin-top: 20px;
+  color: var(--gray-400);
+}
+
+.avatar {
+  position: relative;
+
+  .picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+    border: 2px solid var(--red);
+    padding: 5px;
+  }
+
+  .icon {
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+  }
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--gray-300);
+  border-radius: 999px;
+  padding: 8px 16px;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  span {
+    color: var(--gray-500);
+  }
+}
+
+.next {
+  padding-block: 94px 57px;
+  display: flex;
+  justify-content: center;
+
+  & a:hover {
+    filter: invert(93%) sepia(5%) saturate(300%) hue-rotate(180deg)
+      brightness(96%) contrast(90%);
+  }
+}

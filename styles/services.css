@@ -1,0 +1,40 @@
+.services {
+  /* height: 100vh; */
+  background-color: var(--gray-100);
+
+  .subtitle {
+    font: var(--subtitle);
+    color: var(--red);
+  }
+
+  .header {
+    padding-top: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.solutions {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-block: 56px 120px;
+}
+
+.solution-card {
+  border-radius: 12px;
+  border: 2px solid #16181d;
+  padding: 20px;
+
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}
