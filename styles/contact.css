@@ -1,14 +1,15 @@
 .contacts {
   background: url("../assets/background/Background_Contacts.png") no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  padding-block: 128px 200px;
 }
 
 .header-contact {
   display: flex;
   flex-direction: column;
-  padding-block: 128px 48px;
   align-items: center;
+  padding-bottom: 48px;
 
   .subtitle {
     font: var(--subtitle);
@@ -56,4 +57,10 @@
 
 .arrow {
   margin-left: auto;
+}
+
+@media (max-height: 800px) {
+  .contacts {
+    padding-block: 90px 150px;
+  }
 }

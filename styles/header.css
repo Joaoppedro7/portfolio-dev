@@ -1,7 +1,7 @@
 .intro {
   background: url("../assets/background/Background_Intro.png") no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
 }
 
@@ -82,12 +82,19 @@ h1 + p {
 }
 
 .next {
-  padding-block: 94px 57px;
   display: flex;
   justify-content: center;
+  padding-block: 200px 57px;
 
   & a:hover {
-    filter: invert(93%) sepia(5%) saturate(300%) hue-rotate(180deg)
-      brightness(96%) contrast(90%);
+    transform: scale(1.1);
+    filter: brightness(300%);
+    transition: 0.2s ease-in-out;
+  }
+}
+
+@media (max-height: 800px) {
+  .next {
+    padding-block: 90px;
   }
 }
